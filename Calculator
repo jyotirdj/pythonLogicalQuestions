@@ -1,0 +1,19 @@
+def calculator():
+    print("\n--- Simple Calculator ---")
+    try:
+        a = float(input("Enter first number: "))
+        b = float(input("Enter second number: "))
+        op = input("Enter operation (+, -, *, /): ")
+
+        if op == '+':
+            print("Result =", a + b)
+        elif op == '-':
+            print("Result =", a - b)
+        elif op == '*':
+            print("Result =", a * b)
+        elif op == '/':
+            print("Result =", a / b if b != 0 else "Infinity")
+        else:
+            print("⚠ Invalid operator!")
+    except ValueError:
+        print("⚠ Enter valid numbers!")
