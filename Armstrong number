@@ -1,0 +1,4 @@
+num = 153
+order = len(str(num))
+s = sum(int(d)**order for d in str(num))
+print("Armstrong" if s == num else "Not Armstrong")
